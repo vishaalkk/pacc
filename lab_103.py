@@ -14,7 +14,7 @@ BASE_URL = "https://www.alphavantage.co/"
     retries=3,
     retry_delay_seconds=60,
     cache_key_fn=task_input_hash,
-    cache_expiration=timedelta(days=1),
+    cache_expiration=timedelta(minutes=1),
 )
 def get_data(api_key: str, ticker: str) -> None:
     url = (
